@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Markdown content styling */
+.markdown-content {
+  @apply text-terminal-text;
+}
+
+.markdown-content h1 {
+  @apply text-3xl font-bold text-terminal-green mb-6 mt-8 font-mono;
+}
+
+.markdown-content h2 {
+  @apply text-2xl font-bold text-terminal-blue mb-4 mt-6 font-mono;
+}
+
+.markdown-content h3 {
+  @apply text-xl font-bold text-terminal-purple mb-3 mt-5 font-mono;
+}
+
+.markdown-content h4 {
+  @apply text-lg font-bold text-terminal-text mb-2 mt-4 font-mono;
+}
+
+.markdown-content p {
+  @apply text-terminal-muted leading-relaxed mb-4;
+}
+
+.markdown-content a {
+  @apply text-terminal-green hover:text-terminal-blue transition-colors underline;
+}
+
+.markdown-content ul, .markdown-content ol {
+  @apply text-terminal-muted mb-4 ml-6;
+}
+
+.markdown-content li {
+  @apply mb-2;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-terminal-green pl-4 italic text-terminal-muted bg-terminal-surface p-4 rounded-r-lg mb-4;
+}
+
+.markdown-content code {
+  @apply bg-terminal-surface text-terminal-green px-2 py-1 rounded text-sm font-mono;
+}
+
+.markdown-content pre {
+  @apply bg-terminal-surface border border-terminal-border rounded-lg p-4 mb-4 overflow-x-auto;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent text-terminal-text px-0 py-0;
+}
+
+.markdown-content table {
+  @apply w-full border-collapse border border-terminal-border mb-4;
+}
+
+.markdown-content th, .markdown-content td {
+  @apply border border-terminal-border px-4 py-2 text-left;
+}
+
+.markdown-content th {
+  @apply bg-terminal-surface text-terminal-green font-bold;
+}
+
+.markdown-content img {
+  @apply rounded-lg mb-4 max-w-full h-auto;
+}
+
+.markdown-content hr {
+  @apply border-terminal-border my-8;
+}
+
+/* Code highlighting adjustments for dark theme */
+.hljs {
+  @apply bg-terminal-surface !important;
+}
