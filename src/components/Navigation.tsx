@@ -17,8 +17,8 @@ export const Navigation: React.FC = () => {
   }, []);
 
   const navItems = [
-    { path: '/home', label: 'Home', command: '~/home' }, // Added Analytics
-    { path: '/', label: 'Analytics', command: '~/analytics' }
+    { path: 'https://lekhak03.github.io/dAportfolio/', label: 'Home', command: '~/home' }, // Added Analytics
+    { path: 'https://lekhak03.github.io/dAportfolio/analytics', label: 'Analytics', command: '~/analytics' }
   ];
 
   return (
